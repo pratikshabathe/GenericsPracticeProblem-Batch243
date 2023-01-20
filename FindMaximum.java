@@ -1,10 +1,10 @@
 package com.blz.generics;
 
-public class FindMaximum {
+public class FindMaximum <T extends Comparable <T>> {
 
-	int p, q, r;
+	T p, q, r;
 	
-	public FindMaximum(int p, int q, int r) {
+	public FindMaximum (T p , T q, T r) {
 	
 	this.p = p;
 	this.q = q;
@@ -34,7 +34,7 @@ public class FindMaximum {
 		System.out.println("Welcome to find Maximum problem using Generics \n ");
 		System.out.println("The maximum value between the three integer is " +findMaximum(3, 8, 5) + "\n");
 		System.out.println("The maximum value between the three float is " +findMaximum(1.5f, 3.56f, 5.87f) + "\n");
-		System.out.println("The maximum value between the three String is " +findMaximum("abc", "pqr", "xyz") + "\n");
+		System.out.println("The maximum value between the three String is " +findMaximum("Apple", "Banana", "Peach") + "\n");
 		
 	}
 }
